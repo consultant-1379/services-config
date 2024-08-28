@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util" xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:p="http://www.springframework.org/schema/p" xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+
+						http://www.springframework.org/schema/context
+
+						http://www.springframework.org/schema/context/spring-context-2.5.xsd
+
+						http://www.springframework.org/schema/util
+
+						http://www.springframework.org/schema/util/spring-util-2.5.xsd
+
+						http://www.springframework.org/schema/jee
+
+						http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+    <bean id="groupManagementResource" class="com.ericsson.eniq.events.server.resources.configuration.GroupManagementResource"/>
+    <bean id="groupManagementService" class="com.ericsson.eniq.events.server.resources.configuration.MockGroupManagementService"/>
+    <bean id="groupManagementModuleWrapper" class="com.ericsson.eniq.events.server.serviceprovider.impl.GroupManagementModuleWrapper"/>
+
+
+</beans>
